@@ -1,0 +1,21 @@
+$ipAddresses ="10.237.83.82", "10.237.118.100", "10.237.118.63", "10.237.71.50", "10.237.74.114”
+
+ 
+
+foreach ($ip in $ipAddresses) {
+
+    $result = Test-Connection -ComputerName $ip -Count 4 -ErrorAction SilentlyContinue
+
+ 
+
+    if ($result) {
+
+        Write-Host "$ip is reachable."
+
+    } else {
+
+        Write-Host "$ip is unreachable."
+
+    }
+
+}
