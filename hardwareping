@@ -1,3 +1,4 @@
+#Add the IP addresses you need to ping below (these are example IP addresses)
 $ipAddresses ="10.237.83.82", "10.237.118.100", "10.237.118.63", "10.237.71.50", "10.237.74.114”
 
  
